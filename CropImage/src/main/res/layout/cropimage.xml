@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <view
+        android:id="@+id/image"
+        class="com.android.camera.CropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonsFrame"
+        android:background="#55000000" />
+
+    <LinearLayout
+        android:id="@+id/buttonsFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/ci_content_inset_half"
+        android:paddingLeft="@dimen/ci_content_inset"
+        android:paddingRight="@dimen/ci_content_inset"
+        android:paddingTop="@dimen/ci_content_inset_half"
+        android:weightSum="2"
+        tools:ignore="UnusedAttribute">
+
+        <Button
+            android:id="@+id/discard"
+            style="?buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end|center_vertical"
+            android:layout_weight="1"
+            android:text="@string/crop_discard_text"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/save"
+            style="?buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|start|center_vertical"
+            android:layout_weight="1"
+            android:text="@string/crop_save_text"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</RelativeLayout>

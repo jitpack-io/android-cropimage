@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="ci_content_inset">24dp</dimen>
+    <dimen name="ci_content_inset_half">12dp</dimen>
+
+</resources>
